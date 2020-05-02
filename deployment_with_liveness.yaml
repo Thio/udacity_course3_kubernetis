@@ -15,10 +15,10 @@ spec:
         app: my-app
     spec:
       containers:
-      - name: simple-node
-        image: YOUR_DOCKER_HUB/simple-node
-        ports:
-        - containerPort: 80
+        - name: simple-node
+          image: matthiasholzer/simple-node
+          ports:
+            - containerPort: 80
       livenessProbe:
         httpGet:
           path: /health
